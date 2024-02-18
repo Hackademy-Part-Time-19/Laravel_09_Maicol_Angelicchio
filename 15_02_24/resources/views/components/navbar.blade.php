@@ -15,6 +15,9 @@
       </li>
       @endguest
       @auth
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ route('category.index')}}">Categorie</a>
+      </li>
       <form action="{{ route('logout')}}" method="POST">
         @csrf
         <button type="submit">Logout</button>

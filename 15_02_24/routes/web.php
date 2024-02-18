@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,5 @@ Route::get('/login', function () {
 Route::get('/home', function(){
     return view('account.index');
 })->name('index');
+
+Route::resource('category', CategoryController::class);
